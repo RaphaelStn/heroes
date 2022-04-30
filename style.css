@@ -1,0 +1,75 @@
+body {
+    font-family: 'Helvetica';
+    height: 100vh;
+    background-color: black;
+    margin : 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    display: none;
+    border: 1px solid white;
+    image-rendering: optimizeSpeed;             /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;                 /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+    zoom : 500%;
+}
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+#menu p {
+    display: none;
+    font-size : 25px;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 50px;
+}
+button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #396e9e;
+    border: 2px solid #396e9e;
+    border-radius: 0.6em;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;      
+    font-weight: 700;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.gameover {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
